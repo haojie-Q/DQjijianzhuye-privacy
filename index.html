@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>极简主页 · 隐私政策</title>
+<style>
+  body { font-family: "Microsoft YaHei", -apple-system, sans-serif; max-width: 760px; margin: 0 auto;
+         padding: 40px 24px 60px; line-height: 1.9; color: #1f2937; font-size: 15px; }
+  h1 { font-size: 24px; margin-bottom: 6px; }
+  .date { color: #9ca3af; font-size: 13px; margin-bottom: 32px; }
+  h2 { font-size: 17px; margin: 30px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #eef0f3; }
+  .lead { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 14px 18px; margin-bottom: 8px; }
+  ul { margin: 8px 0 8px 20px; }
+  li { margin-bottom: 6px; }
+  code { background: #f3f4f6; padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 12px; text-align: left; vertical-align: top; }
+  th { background: #f9fafb; }
+  .todo { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 6px; padding: 10px 14px; font-size: 14px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #eef0f3; color: #9ca3af; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>极简主页 · 隐私政策</h1>
+<div class="date">生效日期：2026 年 9 月 15 日　·　适用版本：1.0.6</div>
+
+<div class="lead">
+<strong>一句话总结：本扩展不收集、不上传、不共享任何用户数据。</strong><br>
+你的网址、随手记、外观与布局偏好，全部只保存在你自己电脑的浏览器里。
+</div>
+
+<h2>一、本扩展做什么</h2>
+<p>「极简主页」是一个浏览器新标签页扩展，把新标签页替换成可自定义的网址导航页面：</p>
+<ul>
+  <li>分类摆放常用网站，分类名与页面标题可自行编辑</li>
+  <li>内置网址库，收录常用站点，拖拽即可添加</li>
+  <li>必应每日壁纸，也可改用本地图片或关闭背景</li>
+  <li>栏位与格子的透明度、边框颜色、边框粗细可调，文字颜色随壁纸明暗自动适配</li>
+  <li>栏位宽度、每行格数可调</li>
+  <li>随手记便签、配置导入导出</li>
+</ul>
+
+<h2>二、我们收集什么</h2>
+<p><strong>什么也不收集。</strong></p>
+<ul>
+  <li>没有账号系统，不需要注册或登录</li>
+  <li>不统计使用行为、不记录点击、不做用户画像</li>
+  <li>不读取你的浏览历史、书签、Cookie、密码</li>
+  <li>没有广告，没有第三方统计脚本，没有隐藏的数据上报</li>
+</ul>
+
+<h2>三、数据存储在哪里</h2>
+<p>你添加的网址、分类、随手记内容、布局与外观偏好设置，以及本地上传的壁纸图片，保存在浏览器的本地存储（<code>chrome.storage.local</code>）中，只存在于你这台电脑的浏览器内。卸载扩展时，这些数据会随之清除。</p>
+<p>扩展提供「导出配置」功能，导出的 JSON 文件由你自己决定发给谁；扩展本身不会替你上传。</p>
+
+<h2>四、唯一的外部网络请求</h2>
+<p>本扩展只有在你使用「必应每日壁纸」功能时，会向微软必应发起请求：</p>
+<table>
+  <tr><th>请求对象</th><th>用途</th><th>包含你的什么信息</th></tr>
+  <tr><td><code>cn.bing.com/HPImageArchive.aspx</code></td><td>获取今日壁纸的地址和说明文字</td><td>无（纯公开接口）</td></tr>
+  <tr><td>必应提供的壁纸图片地址</td><td>下载并显示为背景</td><td>无</td></tr>
+</table>
+<p>请求中不包含任何身份标识、账号信息或本机信息。你也可以随时在设置里把背景切换成「本地图片」或「关闭」，切换后扩展将不再发起任何网络请求。</p>
+<p>搜索框与网址格子中的跳转，是你主动点击后由浏览器打开目标网页，属于普通网页浏览，不由本扩展在后台发起。</p>
+
+<h2>五、权限说明</h2>
+<table>
+  <tr><th>权限</th><th>为什么需要</th></tr>
+  <tr><td>storage</td><td>把你的网址、随手记、布局与外观偏好、本地壁纸存在本机</td></tr>
+  <tr><td>host_permissions: cn.bing.com / www.bing.com</td><td>仅用于拉取必应每日壁纸的接口和图片</td></tr>
+  <tr><td>newtab 覆盖</td><td>把新标签页替换成本扩展的导航页</td></tr>
+</table>
+<p>本扩展<strong>不申请</strong> <code>&lt;all_urls&gt;</code>、cookies、history、bookmarks、downloads 等广泛权限。</p>
+
+<h2>六、儿童隐私</h2>
+<p>本扩展不面向 13 岁以下儿童，也不会有意收集儿童个人信息。</p>
+
+<h2>七、政策变更</h2>
+<p>若未来功能调整导致数据处理方式变化，本页会先行更新，并在扩展的更新说明中告知。</p>
+
+<h2>八、联系方式</h2>
+<div class="todo">
+上传前请把下面这行方括号换成你自己的邮箱（商店审核会核对隐私政策里的联系方式）：<br>
+<strong>[ haojieQian2012@163.com ]</strong>
+</div>
+<p style="margin-top:10px;">如对本政策有疑问，可通过上述邮件联系开发者。</p>
+
+<footer>
+本政策由扩展开发者发布，与 Microsoft、Google 及本扩展所链接的任何第三方网站无关。
+</footer>
+
+</body>
+</html>
